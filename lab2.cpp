@@ -40,7 +40,7 @@ int main()
 
             std::cout << "modulo minimum element of an array: ";
             for (int i = 0; i < size; i++) {
-                if (abs(arr[i]) < abs(min_element)) {   /// gсмотр можно ли также через амперсент
+                if (abs(arr[i]) < abs(min_element)) {   
                     min_element = arr[i]; 
                 }
             }
@@ -109,7 +109,7 @@ int main()
                 for (int i = size - 1; i >= 0 && abs(arr[i]) > 0; i--) {
                     sum += arr[i];
                 }
-                std::cout << sum << std::endl;///
+                std::cout << sum << std::endl;
             }
 
             else {
