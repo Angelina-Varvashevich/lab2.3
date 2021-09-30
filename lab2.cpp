@@ -37,43 +37,7 @@ int main()
             for (int i = 0; i < size; i++) {
                 std::cin >> arr[i];
             }
-
-            std::cout << "modulo minimum element of an array: ";
-            for (int i = 0; i < size; i++) {
-                if (abs(arr[i]) < abs(min_element)) {   
-                    min_element = arr[i]; 
-                }
-            }
-            std::cout << min_element << std::endl;
-
-            std::cout << "sum after last 0: ";
-
-            for (int i = 0; i < size; i++) {
-                if (arr[i] == 0) {
-                    ch++;
-                }
-            }
-
-            if (ch > 0) {
-                for (int i = size - 1; i >= 0 && abs(arr[i]) > 0; i--) {
-                    sum += arr[i];
-                }
-                std::cout << sum << std::endl;
-            }
-
-            else { std::cout << "empty, there isn't 0 in array" << std::endl;
-            }
-
-            std::cout << "first elements with even index numbers, then elements with odd index numbers: ";
-            for (int i = 0; i < size; i = i + 2) {
-                std::cout << arr[i] << " ";
-            }
-            for (int i = 1; i < size; i = i + 2) {
-                std::cout << arr[i] << " ";
-            }
             break;
-            delete[]arr;
-
         case 2: 
 
             int min, max; 
@@ -88,44 +52,46 @@ int main()
                 arr[i] = rand()%(max - min) + min;
                 std::cout << arr[i] << std::endl;
             }
-
-            std::cout << "modulo minimum element of an array: " << std::endl;
-            for (int i = 0; i < size; i++) {
-                if (abs(arr[i]) < abs(min_element)) {
-                    min_element = arr[i];
-                }
-            }
-            std::cout << min_element << std::endl;
-
-            std::cout << "sum after last 0: " << std::endl;
-
-            for (int i = 0; i < size; i++) {
-                if (arr[i] == 0) {
-                    ch++;
-                }
-            }
-
-            if (ch > 0) {
-                for (int i = size - 1; i >= 0 && abs(arr[i]) > 0; i--) {
-                    sum += arr[i];
-                }
-                std::cout << sum << std::endl;
-            }
-
-            else {
-                std::cout << "empty, there isn't 0 in array" << std::endl;
-            }
-
-            std::cout << "first elements with even index numbers, then elements with odd index numbers: " << std::endl;
-            for (int i = 0; i < size; i = i + 2)
-                std::cout << arr[i] << std::endl;
-            for (int i = 1; i < size; i = i + 2)
-                std::cout << arr[i] << std::endl;
             break;
-            delete[]arr;
+           
         default: std::cout << "error, try again";
         } 
 
+        std::cout << "modulo minimum element of an array: ";
+        for (int i = 0; i < size; i++) {
+            if (abs(arr[i]) < abs(min_element)) {
+                min_element = arr[i];
+            }
+        }
+        std::cout << min_element << std::endl;
+
+        std::cout << "sum after last 0: ";
+
+        for (int i = 0; i < size; i++) {
+            if (arr[i] == 0) {
+                ch++;
+            }
+        }
+
+        if (ch > 0) {
+            for (int i = size - 1; i >= 0 && abs(arr[i]) > 0; i--) {
+                sum += arr[i];
+            }
+            std::cout << sum << std::endl;
+        }
+
+        else {
+            std::cout << "empty, there isn't 0 in array" << std::endl;
+        }
+
+        std::cout << "first elements with even index numbers, then elements with odd index numbers: ";
+        for (int i = 0; i < size; i = i + 2) {
+            std::cout << arr[i] << " ";
+        }
+        for (int i = 1; i < size; i = i + 2) {
+            std::cout << arr[i] << " ";
+        }
+        delete[]arr;
     }
 
 
