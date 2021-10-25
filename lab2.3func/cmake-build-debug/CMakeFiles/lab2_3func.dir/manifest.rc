@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/clion/lab2.3func/cmake-build-debug/CMakeFiles/lab2_3func.dir/embed.manifest"

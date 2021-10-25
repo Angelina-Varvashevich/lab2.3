@@ -1,0 +1,3 @@
+D:/clion/lab2.3func/cmake-build-debug/CMakeFiles/lab2_3func.dir
+D:/clion/lab2.3func/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/clion/lab2.3func/cmake-build-debug/CMakeFiles/rebuild_cache.dir

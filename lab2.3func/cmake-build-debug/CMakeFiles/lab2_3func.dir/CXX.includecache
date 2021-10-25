@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/clion/lab2.3func/functions.cpp
+functions.h
+D:/clion/lab2.3func/functions.h
+cmath
+-
+
+D:/clion/lab2.3func/functions.h
+
+D:/clion/lab2.3func/main.cpp
+iostream
+-
+functions.h
+D:/clion/lab2.3func/functions.h
+tests.h
+D:/clion/lab2.3func/tests.h
+random
+-
+ctime
+-
+
+D:/clion/lab2.3func/tests.h
+cassert
+-
+functions.h
+D:/clion/lab2.3func/functions.h
+
